@@ -263,8 +263,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(axe-core@4.9.1)(cypress@13.10.0)
       cypress-split:
-        specifier: ^1.23.4
-        version: 1.23.4(@babel/core@7.24.5)
+        specifier: ^1.24.0
+        version: 1.24.0(@babel/core@7.24.5)
       jsdom:
         specifier: ^24.1.0
         version: 24.1.0
@@ -454,12 +454,6 @@ importers:
 
   themes/src/main/resources/theme/keycloak/common/resources:
     dependencies:
-      '@patternfly-v5/patternfly':
-        specifier: npm:@patternfly/patternfly@^5.3.1
-        version: '@patternfly/patternfly@5.3.1'
-      '@patternfly/patternfly':
-        specifier: ^4.224.5
-        version: 4.224.5
       alpinejs:
         specifier: ^3.14.0
         version: 3.14.0
@@ -865,6 +859,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -872,6 +867,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@jest/schemas@29.6.3':
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
@@ -989,9 +985,6 @@ packages:
 
   '@octokit/types@13.5.0':
     resolution: {integrity: sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==}
-
-  '@patternfly/patternfly@4.224.5':
-    resolution: {integrity: sha512-io0huj+LCP5FgDZJDaLv1snxktTYs8iCFz/W1VDRneYoebNHLmGfQdF7Yn8bS6PF7qmN6oJKEBlq3AjmmE8vdA==}
 
   '@patternfly/patternfly@5.3.1':
     resolution: {integrity: sha512-KYIr9pKRTzHZNGuDuaa5j5CaZyLltvotPFGG1BiJalBDBGSOyk0BZCgHLowm4txKZXrLhorEuuv9XLrMQL8eoA==}
@@ -2354,8 +2347,8 @@ packages:
       axe-core: ^3 || ^4
       cypress: ^10 || ^11 || ^12 || ^13
 
-  cypress-split@1.23.4:
-    resolution: {integrity: sha512-4p052Dmx30F/SgGrn2FWc1t9poYHRT9xOnh/ImP9itggPDuJodVdB2bySiwlagGQENoZJO3v1wdi8P1heDfkmQ==}
+  cypress-split@1.24.0:
+    resolution: {integrity: sha512-ZEFh1m6z+HwPWpB1h9YAF1L6K/wkPBR3vD+v8Rrg8BRm50sZ7oSx6Dw+sv6zfr5Pfqv247CnobLewdFBLlPIBQ==}
     hasBin: true
 
   cypress@13.10.0:
@@ -2893,8 +2886,8 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
-  find-cypress-specs@1.43.3:
-    resolution: {integrity: sha512-S/2c8W1SbuwY1MmQD1Md9jYNPm3298o1+VGJNrw70CcPrkjw0ASltDFRddcD0cFLmE8jOT9C/EwdZMi3RaM0jA==}
+  find-cypress-specs@1.43.4:
+    resolution: {integrity: sha512-GAdz6lfBndbOq9OOJ3psThQ56hqgL8tZUCOLnl60d/l56bvHkC0TNwyqlLfBObiscirSZWSgyGL86jJkrpFMrA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5607,8 +5600,6 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 22.2.0
 
-  '@patternfly/patternfly@4.224.5': {}
-
   '@patternfly/patternfly@5.3.1': {}
 
   '@patternfly/react-code-editor@5.3.3(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -7107,14 +7098,14 @@ snapshots:
       axe-core: 4.9.1
       cypress: 13.10.0
 
-  cypress-split@1.23.4(@babel/core@7.24.5):
+  cypress-split@1.24.0(@babel/core@7.24.5):
     dependencies:
       '@actions/core': 1.10.1
       arg: 5.0.2
       console.table: 0.10.0
       debug: 4.3.4(supports-color@8.1.1)
       fast-shuffle: 6.1.0
-      find-cypress-specs: 1.43.3(@babel/core@7.24.5)
+      find-cypress-specs: 1.43.4(@babel/core@7.24.5)
       globby: 11.1.0
       humanize-duration: 3.32.0
     transitivePeerDependencies:
@@ -7881,7 +7872,7 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  find-cypress-specs@1.43.3(@babel/core@7.24.5):
+  find-cypress-specs@1.43.4(@babel/core@7.24.5):
     dependencies:
       '@actions/core': 1.10.1
       arg: 5.0.2
