@@ -6,8 +6,6 @@
     "build:clean": "shx rm -rf vendor"
   },
   "dependencies": {
-    "@patternfly-v5/patternfly": "npm:@patternfly/patternfly@^5.3.1",
-    "@patternfly/patternfly": "^4.224.5",
     "alpinejs": "^3.14.0",
     "jquery": "^3.7.1",
     "patternfly": "^3.59.5",
