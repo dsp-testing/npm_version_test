@@ -48,7 +48,7 @@ importers:
         specifier: ^15.2.5
         version: 15.2.5
       prettier:
-        specifier: ^3.3.2
+        specifier: ^3.2.5
         version: 3.3.2
       tslib:
         specifier: ^2.6.3
@@ -151,8 +151,8 @@ importers:
         specifier: ^5.3.1
         version: 5.3.1
       '@patternfly/react-code-editor':
-        specifier: ^5.3.3
-        version: 5.3.3(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.3.4
+        version: 5.3.4(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-core':
         specifier: ^5.3.3
         version: 5.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -454,6 +454,12 @@ importers:
 
   themes/src/main/resources/theme/keycloak/common/resources:
     dependencies:
+      '@patternfly-v5/patternfly':
+        specifier: npm:@patternfly/patternfly@^5.3.1
+        version: '@patternfly/patternfly@5.3.1'
+      '@patternfly/patternfly':
+        specifier: ^4.224.5
+        version: 4.224.5
       alpinejs:
         specifier: ^3.14.0
         version: 3.14.0
@@ -986,17 +992,26 @@ packages:
   '@octokit/types@13.5.0':
     resolution: {integrity: sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==}
 
+  '@patternfly/patternfly@4.224.5':
+    resolution: {integrity: sha512-io0huj+LCP5FgDZJDaLv1snxktTYs8iCFz/W1VDRneYoebNHLmGfQdF7Yn8bS6PF7qmN6oJKEBlq3AjmmE8vdA==}
+
   '@patternfly/patternfly@5.3.1':
     resolution: {integrity: sha512-KYIr9pKRTzHZNGuDuaa5j5CaZyLltvotPFGG1BiJalBDBGSOyk0BZCgHLowm4txKZXrLhorEuuv9XLrMQL8eoA==}
 
-  '@patternfly/react-code-editor@5.3.3':
-    resolution: {integrity: sha512-yXKzqNzztLw1PuujQArhRM0PktU5LFuUuR9anUpzaNXMiI/n+A5JXLI1i1E3NBWg+4hs1qpjMRdWd74o0QnjEQ==}
+  '@patternfly/react-code-editor@5.3.4':
+    resolution: {integrity: sha512-pwL7NkRsQps5D6xOe2nepS4yRTbU/Im4Y09Yg2teB5G/f5oGI5OW9pUAagjcK0TAV/Gb6YILCwixoaXtuw0n+g==}
     peerDependencies:
       react: ^17 || ^18
       react-dom: ^17 || ^18
 
   '@patternfly/react-core@5.3.3':
     resolution: {integrity: sha512-qq3j0M+Vi+Xmd+a/MhRhGgjdRh9Hnm79iA+L935HwMIVDcIWRYp6Isib/Ha4+Jk+f3Qdl0RT3dBDvr/4m6OpVQ==}
+    peerDependencies:
+      react: ^17 || ^18
+      react-dom: ^17 || ^18
+
+  '@patternfly/react-core@5.3.4':
+    resolution: {integrity: sha512-zr2yeilIoFp8MFOo0vNgI8XuM+P2466zHvy4smyRNRH2/but2WObqx7Wu4ftd/eBMYdNqmTeuXe6JeqqRqnPMQ==}
     peerDependencies:
       react: ^17 || ^18
       react-dom: ^17 || ^18
@@ -5608,18 +5623,20 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 22.2.0
 
+  '@patternfly/patternfly@4.224.5': {}
+
   '@patternfly/patternfly@5.3.1': {}
 
-  '@patternfly/react-code-editor@5.3.3(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@patternfly/react-code-editor@5.3.4(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@monaco-editor/react': 4.6.0(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@patternfly/react-core': 5.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@patternfly/react-core': 5.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons': 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles': 5.3.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-dropzone: 14.2.3(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - monaco-editor
 
@@ -5633,6 +5650,17 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-dropzone: 14.2.3(react@18.3.1)
       tslib: 2.6.2
+
+  '@patternfly/react-core@5.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@patternfly/react-icons': 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@patternfly/react-styles': 5.3.1
+      '@patternfly/react-tokens': 5.3.1
+      focus-trap: 7.5.2
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-dropzone: 14.2.3(react@18.3.1)
+      tslib: 2.6.3
 
   '@patternfly/react-icons@5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -6580,7 +6608,7 @@ snapshots:
       '@keycloak/keycloak-admin-client': link:js/libs/keycloak-admin-client
       '@keycloak/keycloak-ui-shared': link:js/libs/ui-shared
       '@patternfly/patternfly': 5.3.1
-      '@patternfly/react-code-editor': 5.3.3(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@patternfly/react-code-editor': 5.3.4(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-core': 5.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons': 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles': 5.3.1
@@ -9334,7 +9362,7 @@ snapshots:
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   safe-array-concat@1.1.2:
     dependencies:
