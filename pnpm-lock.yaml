@@ -48,7 +48,7 @@ importers:
         specifier: ^15.2.5
         version: 15.2.5
       prettier:
-        specifier: ^3.3.2
+        specifier: ^3.2.5
         version: 3.3.2
       tslib:
         specifier: ^2.6.3
@@ -84,8 +84,8 @@ importers:
         specifier: ^23.11.5
         version: 23.11.5
       i18next-http-backend:
-        specifier: ^2.5.2
-        version: 2.5.2
+        specifier: ^2.7.0
+        version: 2.7.0
       keycloak-js:
         specifier: workspace:*
         version: link:../../libs/keycloak-js
@@ -184,8 +184,8 @@ importers:
         specifier: ^23.11.5
         version: 23.11.5
       i18next-http-backend:
-        specifier: ^2.5.2
-        version: 2.5.2
+        specifier: ^2.7.0
+        version: 2.7.0
       keycloak-js:
         specifier: workspace:*
         version: link:../../libs/keycloak-js
@@ -454,6 +454,12 @@ importers:
 
   themes/src/main/resources/theme/keycloak/common/resources:
     dependencies:
+      '@patternfly-v5/patternfly':
+        specifier: npm:@patternfly/patternfly@^5.3.1
+        version: '@patternfly/patternfly@5.3.1'
+      '@patternfly/patternfly':
+        specifier: ^4.224.5
+        version: 4.224.5
       alpinejs:
         specifier: ^3.14.0
         version: 3.14.0
@@ -985,6 +991,9 @@ packages:
 
   '@octokit/types@13.5.0':
     resolution: {integrity: sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==}
+
+  '@patternfly/patternfly@4.224.5':
+    resolution: {integrity: sha512-io0huj+LCP5FgDZJDaLv1snxktTYs8iCFz/W1VDRneYoebNHLmGfQdF7Yn8bS6PF7qmN6oJKEBlq3AjmmE8vdA==}
 
   '@patternfly/patternfly@5.3.1':
     resolution: {integrity: sha512-KYIr9pKRTzHZNGuDuaa5j5CaZyLltvotPFGG1BiJalBDBGSOyk0BZCgHLowm4txKZXrLhorEuuv9XLrMQL8eoA==}
@@ -2764,6 +2773,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@10.0.1:
@@ -3160,8 +3170,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next-http-backend@2.5.2:
-    resolution: {integrity: sha512-+K8HbDfrvc1/2X8jpb7RLhI9ZxBDpx3xogYkQwGKlWAUXLSEGXzgdt3EcUjLlBCdMwdQY+K+EUF6oh8oB6rwHw==}
+  i18next-http-backend@2.7.0:
+    resolution: {integrity: sha512-ruusEX6azT8pXy+C2etRQZ0ylbs1ix/z6D+zNv/tUcy9Sw8TWRO989Z7X1LLV31JVO/cAoSk3gH3rapSTL+j9w==}
 
   i18next@23.11.5:
     resolution: {integrity: sha512-41pvpVbW9rhZPk5xjCX2TPJi2861LEig/YRhUkY+1FQ2IQPS0bKUDYnEqY8XPPbB48h1uIwLnP9iiEfuSl20CA==}
@@ -5608,6 +5618,8 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 22.2.0
 
+  '@patternfly/patternfly@4.224.5': {}
+
   '@patternfly/patternfly@5.3.1': {}
 
   '@patternfly/react-code-editor@5.3.3(monaco-editor@0.49.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -6590,7 +6602,7 @@ snapshots:
       file-selector: 0.6.0
       flat: 6.0.1
       i18next: 23.11.5
-      i18next-http-backend: 2.5.2
+      i18next-http-backend: 2.7.0
       keycloak-js: link:js/libs/keycloak-js
       lodash-es: 4.17.21
       monaco-editor: 0.49.0
@@ -8178,7 +8190,7 @@ snapshots:
 
   husky@9.0.11: {}
 
-  i18next-http-backend@2.5.2:
+  i18next-http-backend@2.7.0:
     dependencies:
       cross-fetch: 4.0.0
     transitivePeerDependencies:
