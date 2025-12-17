@@ -29,7 +29,7 @@
     "i18next": "^23.11.5",
     "i18next-http-backend": "^2.5.2",
     "keycloak-js": "workspace:*",
-    "lodash-es": "^4.17.21",
+    "lodash-es": "^4.17.22",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.51.5",
